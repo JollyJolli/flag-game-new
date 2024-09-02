@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Adivina la Bandera</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>¿De qué país es esta bandera?</h1>
+        <div id="flag-container">
+            <img id="flag" src="" alt="Bandera">
+        </div>
+        <input type="text" id="guess" placeholder="Introduce tu respuesta">
+        <button onclick="checkAnswer()"><i class="fas fa-check"></i> Comprobar</button>
+        <button onclick="giveHint()"><i class="fas fa-lightbulb"></i> Pista</button>
+        <p id="result"></p>
+        <p id="hint"></p>
+        <button onclick="nextFlag()"><i class="fas fa-arrow-right"></i> Siguiente bandera</button>
+        <div id="score-container">
+            <p id="score">Puntuación: 0</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
